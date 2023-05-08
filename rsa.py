@@ -47,5 +47,5 @@ ciphertext = rsa.encrypt_text(plaintext)
 decrypted_text = rsa.decrypt_text(ciphertext)
 
 print("Tekst oryginalny:", plaintext)
-print("Zaszyfrowany tekst:", ciphertext)
+print("Zaszyfrowany tekst (w postaci bitowej):", ciphertext)
 print("Odszyfrowany tekst:", decrypted_text)
