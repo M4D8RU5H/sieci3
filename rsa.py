@@ -18,7 +18,7 @@ class RSA:
 
     def encrypt_text(self, plaintext):
         plaintext_bytes = plaintext.encode('utf-8')
-        block_size = self.key_size // 8 - 11
+        block_size = self.key_size // 8
         encrypted_blocks = []
         for i in range(0, len(plaintext_bytes), block_size):
             block = plaintext_bytes[i:i + block_size]
